@@ -129,7 +129,8 @@ One can use the ``fit`` method to perform PCA over a given dataset.
 .. code-block:: julia
 
     using MultivariateStats
-
+    using MultivariateStats: transform
+    
     # suppose Xtr and Xte are training and testing data matrix,
     # with each observation in a column
 
@@ -146,7 +147,7 @@ One can use the ``fit`` method to perform PCA over a given dataset.
 
 .. code-block:: julia
 
-    using MultivariateStats, RDatasets, Plots
+    using MultivariateStats, MultivariateStats: transform, RDatasets, Plots
     plotly() # using plotly for 3D-interacive graphing
 
     # load iris dataset 
